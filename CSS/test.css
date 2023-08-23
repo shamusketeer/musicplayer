@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #0c1027;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: relative;
+    color: white;
+}
+.navbar{
+    margin-top: 2%;
+    height:10%;
+	width: 100%;
+	display: flex;
+}
+#logo-image{
+    width: 10%;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+#logo-image img{    
+    width: 8em;
+    height: 3em;
+}
+.sample-text span{
+    margin-left: 10%;
+}
+.horizontal-list{
+    width: 75%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar .search-box{
+	height: 50px;
+	width: 100%;
+	font-size: 1.1rem;
+	border-radius: 30px;
+    border: none;
+	outline: none;
+	padding-left: 5px;
+	background-color: #12193e;
+	color:#ffffff;
+    position: relative;
+}
+input[type="text"]::placeholder{
+	padding: 2rem;
+	font-size: 1.2rem;
+	font-weight: 100;
+    color: white;
+
+}
+.search{
+    position: absolute;
+    top: 40%;
+    /* left: 0; */
+    font-size: 1rem;
+    z-index: 1;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+.mic{
+    position: absolute;
+    top: 40%;
+    right: 8.5%;
+    font-size: 1rem;
+    z-index: 1;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+.nav-end{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:auto;
+}
+.bell{
+    font-size: 1.5rem;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-end::after{/* give logo at end of nav*/
+	content: '';
+    display: flex;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url(/StudioProject/Image/logo.jpeg);
+    background-size: cover;
+    margin-left: 1.2rem;
+
+}
+.nav-end >span > i{/* for maing it align with last icon*/
+	margin-top: 100%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #12193e;
+    border-radius: 25px;
+    padding: 8px;
+    background: #12193e;
+  }
+  
+  .search-icon {
+    padding-right: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  
+  .mic-icon {
+    padding-left: 10px;
+    color: #93a8b3;
+    font-size: 1.5rem;
+  }
+  
+  input[type="text"]{
+    flex: 1;
+    border: none;
+    font-size: 1.6em;
+    outline: none;
+    background: none;
+    color: white;
+  }
+  

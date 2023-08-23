@@ -1,0 +1,466 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: white;
+    background-color: #0c1027;
+    margin: 0;
+    padding: 0;
+}
+
+
+         /* Navbar Start */
+#nav-header{
+    width: 100%;
+    height: 10vh;
+    margin-top: 2%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav .logo img{
+    width: 8rem;
+    height: 4rem;
+}
+.nav .user-logo img{
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+.horizontal-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.horizontal-list .list-content{
+    list-style: none;
+}
+
+.list-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #12193e;
+    border-radius: 12px;
+    padding: 0.5rem;
+    background: #12193e;
+  }
+  
+  .search-icon {
+    padding-right: 10px;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  
+  .mic-icon {
+    padding-left: 0.6rem;
+    color: #93a8b3;
+    font-size: 1.5rem;
+  }
+  
+  input[type="text"]{
+    flex: 1;
+    border: none;
+    font-size: 1.3em;
+    outline: none;
+    background: none;
+    color: white;
+  }
+ 
+  .bell-icon i{
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+  }
+
+               /* Navbar End */
+
+/* Main Section */
+.main-section{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+/* Flex Container */
+#container{
+    display: flex;
+}
+
+        /* Flex First Left Container */
+
+#container .left-container{
+    flex: 65%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #141b41;
+}
+
+        /* Flex First Right Container/ Aside Container  */
+
+#container .right-container{
+    flex: 35%;
+    height: auto;
+}
+            /* Band Image */
+
+.band-image{
+    flex: 40%;
+}
+.band-image img{
+    height: 350px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0 0 0 0.3);
+    opacity: 0.6;
+}
+
+
+/* Band Descprition */
+
+.band-content{
+    flex: 55%;
+}
+.band-content h1{
+    display: inline-block;
+}
+.band-content #follw{
+    margin-left: 15rem;
+    color: #a4a7b5;
+}
+.band-content h6{
+    display: inline;
+    font-size: 1rem;
+    color: #a4a7b5;
+    font-weight: 400;
+}
+.band-content p{
+    font-size: 0.8rem;
+    color: #a4a7b5;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+/* Button Style */
+
+.btn{
+    padding: .5rem 2.5rem;
+    background: rgb(62,91,238);
+    background: linear-gradient(90deg, rgba(62,91,238,1) 39%, rgba(210,70,252,1) 92%);
+    color: white;
+    border: none;
+}
+.band-content .follo{
+    margin-left: 5rem;
+}
+.band-content h5{
+    font-weight: 400;
+}
+.next-song{
+    display: flex;
+}
+.next-song h1{
+    display: inline;
+}
+
+
+/* Similar Artist Section */
+
+.heder-text{
+    display: flex;
+    justify-content: space-between;
+}
+.heder-text h1{
+    margin-top: 0;
+    flex: 50%;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+.heder-text span{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.similar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.artist img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px skyblue;
+}
+.similar .song-name h6{
+    margin-top: -.8rem;
+    color: #9d9fa8;
+    font-size: .8rem;
+}
+.similar .iconAndTime{
+    color: #9d9fa8;
+   margin-bottom: 3.2rem; 
+}
+.similar .iconAndTime p{
+    margin-top: -.2rem;
+    font-size: .6rem;
+}
+
+/* Music List Container */
+
+#container2{
+    display: flex;
+    margin-top: 1rem;
+}
+            /* Music List Left Container */
+#container2 .left-container2{
+    flex: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+            /* Music List Right Container */
+#container2 .right-container2{
+    flex: 35%;
+    height: 300px;
+    margin-top: 3rem;
+}
+                /* Music List Div */
+.music-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #1a1e33;
+    height: 10vh;
+    width: 100%;
+    margin: 0.5rem 0;
+    transition: .5s;
+}
+.music-list:hover{
+    transform: scale(1.1);
+}
+.song-image img{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.song-image span{
+    margin-bottom: 1rem;
+}
+.music-list-song-name h6{
+    margin-top: -.8rem;
+    color: #9d9fa8;
+    font-size: .8rem;   
+}
+.music-list-song-icon i{
+    padding: 0 1rem;
+    color: #9d9fa8;
+}
+.music-list-song-time{
+    color: #9d9fa8;
+}
+
+
+.similar .artist2 img{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0px lightblue;
+}
+
+.fa-heart:hover{
+    color: #fd79a8;
+}
+.fa-plus:hover{
+    color: #0984e3;
+}
+
+            /* Footer Navbar */
+footer{
+    background-color: #282828;
+    /* height: 15vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-nav{
+    display: flex;
+}
+.right-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .right-element-image img{
+    width: 50px;
+    height: 50px;
+    border: 5px;
+    /* z-index: 99; */
+}
+.right-element-text{
+    display: inline-block;
+    padding: 0 2rem;
+}
+.right-element-text h6{
+    margin-bottom: -0.5rem;
+}
+.paly-icons i{
+    padding: 0 2rem;
+}
+.fa-circle-pause{
+    font-size: 2.5rem;
+}
+.pregress-bar{
+    padding-top: .5rem;
+    width: 100%;
+    border-bottom: 5px solid;
+    position: relative;
+    /* border-radius: 50%; */
+}
+.song-lenght{
+    width: 50%;
+    /* color: cyan; */
+    border-bottom: 5px solid cyan;
+    position: absolute;
+    top: 0.5rem;
+}
+.circle 
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 13rem;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -0.3rem;
+}
+.last-icon i{
+    padding: 0 .6rem;
+}
+
+.pregress-bar2{
+    padding-top: .5rem;
+    width: 40%;
+    border-bottom: 5px solid;
+    position: relative;
+    display: inline-block;
+    /* border-radius: 50%; */
+}
+.song-lenght2{
+    width: 50%;
+    /* color: cyan; */
+    border-bottom: 5px solid cyan;
+    position: absolute;
+    top: 0.5rem;
+    display: inline-block;
+}
+
+
+               /* Footer Navbar Start */
+.footer-nav{
+  display: none;
+}
+.footer-icons i{
+  font-size: 2.5rem;
+  color: white;
+}
+.footer-icons i:hover{
+    color: #141b41;
+}
+.footer-icons p:hover{
+    color: #141b41;
+}
+.footer-icons p{
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+               /* Footer Navbar End */
+
+
+
+                /* Media Query Start */
+
+@media only screen and (max-width: 1350px){
+    .band-content #follw{
+        display: block;
+        margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 1260px){
+    #container{
+        flex-direction: column;
+    }
+    #container .right-container{
+        margin-top: 2rem;
+    }
+    #container2{
+        flex-direction: column;
+    }
+    .music-list{
+        height: 20vh;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .right-element, .paly-icons, .last-icon{
+        padding: 1.2rem 0;
+    }
+}
+@media only screen and (max-width: 850px){
+    #container .left-container{
+        flex-direction: column;
+        flex: 100%;
+    }
+    .band-image img{
+        height: auto;
+        width: 100%;
+    }
+    .band-content{
+        flex: 100%;
+        margin-left: 2rem;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .nav .logoimg{
+        width: 4rem;
+        height: 2rem;
+    }
+      .simple-text,.horizontal-list,.bell-icon,.user-logo{
+        display: none;
+      }
+      footer{
+        display: none;
+      }
+      .footer-nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: rgb(62,91,238);
+        background: linear-gradient(90deg, rgba(62,91,238,1) 39%, rgba(210,70,252,1) 92%);
+        margin-top: -1rem;
+        padding-top: 1rem;
+      }
+}

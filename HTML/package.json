@@ -1,0 +1,11 @@
+{
+  "name": "studioproject",
+  "version": "1.0.0",
+  "description": "music studio project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shrique baig",
+  "license": "ISC"
+}
